@@ -26,7 +26,7 @@ Os usuários devem ser capazes de:
 
 ## **Links**
 
-- [Site ao Vivo](https://seu-usuario.github.io/product-preview-card-component/)
+- [Site ao Vivo](https://cadanieldev.github.io/product-preview-card/)
 
 ---
 
