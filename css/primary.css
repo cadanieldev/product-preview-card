@@ -112,6 +112,11 @@ body {
   text-align: center;
   color: var(--White);
   background: var(--Green-500);
+  transition: background .3s;
+}
+
+.btn:hover {
+  background: var(--Green-700);
 }
 
 /* MEDIA */
