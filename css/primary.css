@@ -1,0 +1,151 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: var(--Cream);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENT */
+.container {
+  max-width: 1440px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bg-img img {
+  border-radius: .675rem 0 0 .675rem;
+  width: 18.75rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* MAIN */
+.main-content {
+  max-width: 18.75rem;
+  height: 99.2%;
+  background: var(--White);
+  border-radius: 0 .675rem .675rem 0;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content h4 {
+  font-family: var(--font-textos);
+  color: var(--Grey);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .675rem;
+  letter-spacing: 5px;
+  margin: 0 0 1.3rem 0;
+}
+
+.content h1 {
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1;
+  margin: 0 0 1.5rem 0;
+}
+
+.content p {
+  font-family: var(--font-textos);
+  font-size: .875rem;
+  color: var(--Grey);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.content-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+.content-price .price {
+  font-family: var(--font-titulo);
+  color: var(--Green-500);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content-price .old-price {
+  font-family: var(--font-textos);
+  text-decoration: line-through;
+  color: var(--Grey);
+  font-weight: 500;
+  font-size: .875rem;
+  
+}
+
+.content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem;
+  border-radius: .475rem;
+  font-family: var(--font-textos);
+  font-size: .875rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: var(--White);
+  background: var(--Green-500);
+}
+
+/* MEDIA */
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .bg-img img {
+    width: 100%;
+    border-radius: .675rem .675rem 0 0;
+  }
+  .main-content {
+    box-sizing: border-box;
+    border-radius: 0 0 .675rem .675rem;
+    margin-top: -.195rem;
+    min-width: 340px;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .content h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .content h4 {
+    margin: .875rem 0;
+  }
+  .content p {
+    max-width: 30ch;
+  }
+}
